@@ -1,0 +1,24 @@
+# Disabled banner, don't want to see the spring logo
+spring:
+  main:
+    banner-mode: 'off'
+
+# Media settings
+camera:
+  front:
+    audio:
+      volume: 5
+      codec: MP3
+    video:
+      resolution: 1920x1080
+      fps: 60
+      codec: MP4
+
+  rear:
+    audio:
+      volume: 5
+      codec: MP3
+    video:
+      resolution: 800x600
+      fps: 30
+      codec: THREEGP
