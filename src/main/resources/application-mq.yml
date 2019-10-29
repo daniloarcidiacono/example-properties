@@ -1,0 +1,23 @@
+# Disabled banner, don't want to see the spring logo
+spring:
+  main:
+    banner-mode: 'off'
+
+# YAML Anchors
+medium: &medium-setting
+  audio:
+    volume: 5
+    codec: MP3
+  video:
+    resolution: 800x600
+    fps: 30
+    codec: THREEGP
+
+# Media settings
+# https://confluence.atlassian.com/bitbucket/yaml-anchors-960154027.html
+camera:
+  front: *medium-setting
+  rear:
+    <<: *medium-setting
+    audio:
+      codec: FLAC
