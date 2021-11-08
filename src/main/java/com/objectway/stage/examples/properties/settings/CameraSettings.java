@@ -1,8 +1,6 @@
 package com.objectway.stage.examples.properties.settings;
 
 import com.objectway.stage.examples.properties.settings.media.MediaSettings;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.context.annotation.Configuration;
@@ -16,16 +14,12 @@ public class CameraSettings {
     /**
      * Front camera settings.
      */
-    @Autowired
-    @Qualifier("frontCamera")
     @NestedConfigurationProperty
     private MediaSettings front;
 
     /**
      * Rear camera settings.
      */
-    @Autowired
-    @Qualifier("rearCamera")
     @NestedConfigurationProperty
     private MediaSettings rear;
 
